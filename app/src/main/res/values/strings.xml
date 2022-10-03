@@ -1,21 +1,3 @@
 <resources>
     <string name="app_name">Relative Aneh</string>
-    <string-array name="arr_kemungkinan">
-        <item>
-            Benar
-        </item>
-        <item>
-            Mungkin Benar
-        </item>
-        <item>
-            Mungkin Salah
-        </item>
-        <item>
-            Salah
-        </item>
-    </string-array>
-<<<<<<< HEAD
-
-=======
->>>>>>> 1dfec91b7db373cab883cdbcd7ed9a644e9bad40
 </resources>
