@@ -20,14 +20,18 @@
         android:text="Formulir Pernyataan"
         android:layout_below="@id/tv_tanggal"
         android:layout_marginTop="32dp"/>
+
     <EditText
         android:id="@+id/et_nama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nama"
         android:layout_below="@id/tv_formulir_pernyataan"
-        android:layout_marginTop="30dp"
-        android:gravity="center"/>
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-2dp"
+        android:layout_toRightOf="@id/cb_ya"
+        android:gravity="center"
+        android:hint="Nama" />
+
     <Button
         android:id="@+id/btn_enter"
         android:layout_width="wrap_content"
@@ -42,6 +46,39 @@
         android:text="Copyright\nBy You"
         android:gravity="center"
         android:layout_centerInParent="true"/>
+
+    <CheckBox
+        android:id="@+id/cb_ya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ya"
+        android:layout_alignParentBottom="true"/>
+
+    <CheckBox
+        android:id="@+id/cb_tidak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tidak"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/cb_ya"/>
+
+    <TextView
+        android:id="@+id/tv_saya_nyatakan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saya menyatakan data ini : "
+        android:layout_marginBottom="2dp"
+        android:layout_above="@+id/cb_ya"/>
+
+    <Spinner
+        android:id="@+id/sp_kemungkinan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/arr_kemungkinan"
+        android:layout_above="@id/cb_ya"
+        android:layout_toRightOf="@id/tv_saya_nyatakan"/>
+
+
 
 
 </RelativeLayout>
